@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import SalesCard from "./SalesCard";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function App() {
   const [Product, setProduct] = useState([]);
@@ -27,8 +28,10 @@ function App() {
 
   return (
     <>
+    <div className="w-6xl mx-auto">
     <Navbar/>
-      <div className="w-7xl h-full gap-30 mx-auto flex flex-col items-center py-32">
+    </div>
+      <div className="w-7xl h-full gap-30 mx-auto flex flex-col items-center py-12">
         <div className="grid grid-cols-4 gap-10">
           {Product2.map((items2) => (
             <SalesCard
@@ -55,6 +58,8 @@ function App() {
           </div>
         </div>
       </div>
+      
+      <Footer/>
     </>
   );
 }
