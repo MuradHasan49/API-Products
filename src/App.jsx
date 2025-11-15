@@ -16,7 +16,7 @@ function App() {
       });
   }, []);
 
-  console.log(Product)
+  console.log(Product);
 
   useEffect(() => {
     fetch("https://dummyjson.com/products")
@@ -28,28 +28,18 @@ function App() {
 
   return (
     <>
-    <div className="w-6xl mx-auto">
-    <Navbar/>
-    </div>
+      <div className="w-6xl mx-auto">
+        <Navbar />
+      </div>
       <div className="w-7xl h-full gap-30 mx-auto flex flex-col items-center py-12">
-        <div className="grid grid-cols-4 gap-10">
-          {Product2.map((items2) => (
-            <SalesCard
-            Discount={items2.category}
-              img={items2.thumbnail}
-              h2={items2.title}
-              price={items2.price}
-            />
-          ))}
-        </div>
         <div className="flex flex-col items-center">
-          <h1 className="py-22 text-5xl font-semibold ">
+          <h1 className="py-12 text-5xl font-semibold ">
             Phone Accessories and Phone
           </h1>
           <div className="grid grid-cols-4 gap-10">
             {Product.map((items) => (
               <SalesCard
-              Discount={items.category}
+                Discount={items.category}
                 img={items.thumbnail}
                 h2={items.title}
                 price={items.price}
@@ -57,9 +47,23 @@ function App() {
             ))}
           </div>
         </div>
+
+        <div className="flex flex-col items-center">
+          <h1 className="py-12 text-5xl font-semibold ">Accessories</h1>
+          <div className="grid grid-cols-4 gap-10">
+            {Product2.map((items2) => (
+              <SalesCard
+                Discount={items2.category}
+                img={items2.thumbnail}
+                h2={items2.title}
+                price={items2.price}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-      
-      <Footer/>
+
+      <Footer />
     </>
   );
 }
