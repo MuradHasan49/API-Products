@@ -41,6 +41,7 @@ function App() {
           <div className="grid grid-cols-4 gap-10">
             {Product.map((items) => (
               <SalesCard
+              Discount={items.category}
                 img={items.thumbnail}
                 h2={items.title}
                 price={items.price}
