@@ -133,18 +133,18 @@ const Footer = () => {
                 </p>
                 <div className="flex gap-2 mb-4">
                   <img
-                    src="/Footer/Qr Code.png"
+                    src="/../src/assets/Qr Code.png"
                     alt="QR Code"
                     className="w-16 h-16 border border-gray-400 rounded-md"
                   />
                   <div className="flex flex-col justify-center gap-2">
                     <img
-                      src="/Footer/Playstore.png"
+                      src="../src/assets/Playstore.png"
                       alt="Google Play"
                       className="w-24"
                     />
                     <img
-                      src="/Footer/appstore.png"
+                      src="../src/assets/appstore.png"
                       alt="App Store"
                       className="w-24"
                     />
