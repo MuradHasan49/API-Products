@@ -43,6 +43,8 @@ function App() {
                 img={items.thumbnail}
                 h2={items.title}
                 price={items.price}
+                rating={5}
+                total={77}
               />
             ))}
           </div>
