@@ -52,7 +52,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Center Links (Desktop) */}
         <div className="hidden md:flex gap-8 font-semibold text-gray-700">
           {["Home", "Contact", "About", "Sign Up",].map((link) => (
             <a
