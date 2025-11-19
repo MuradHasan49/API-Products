@@ -13,17 +13,17 @@ const SalesCard = ({
     <div className="w-[260px] bg-white rounded-2xl shadow-md hover:shadow-xl 
       transition-all duration-300 p-4 cursor-pointer group border border-gray-100">
 
-      {/* Image Section */}
+
       <div className="relative bg-gray-100 rounded-xl h-56 flex items-center justify-center overflow-hidden">
         
-        {/* Discount Badge */}
+
         {Discount && (
           <span className="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-md">
             {Discount}
           </span>
         )}
 
-        {/* Hover Icons */}
+
         <div className="absolute top-3 right-3 flex flex-col gap-2">
 
           <button className=" ">
@@ -45,7 +45,7 @@ const SalesCard = ({
           className="h-40 transition-transform duration-300 group-hover:scale-110"
         />
 
-        {/* Add to cart */}
+
         <div className="absolute bottom-0 w-full text-center bg-black text-white py-2
           rounded-b-xl opacity-0 group-hover:opacity-100 translate-y-3 
           group-hover:translate-y-0 transition-all duration-300">
@@ -53,16 +53,15 @@ const SalesCard = ({
         </div>
       </div>
 
-      {/* Product Info */}
       <h2 className="mt-4 font-semibold text-lg text-gray-800">{h2}</h2>
 
-      {/* Price */}
+
       <div className="mt-2 flex items-center gap-2">
         <span className="text-xl font-bold text-red-600">{price}</span>
         <span className="text-gray-400 line-through">{DiscountPrice}</span>
       </div>
 
-      {/* Rating */}
+
       <div className="flex items-center mt-2">
         {Array.from({ length: 5 }).map((_, i) => (
           <svg
