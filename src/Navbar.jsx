@@ -98,7 +98,7 @@ const Navbar = () => {
                       
             <ProfileMenu />
 
-            {/* Hamburger Menu */}
+
             <button onClick={() => setMenuOpen(!menuOpen)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Search Bar */}
+
       {showSearchMobile && (
         <div className="md:hidden bg-gray-100 p-4 border-t border-gray-300">
           <input
@@ -124,7 +124,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* Mobile Menu Collapse */}
+
       {menuOpen && (
         <div className="md:hidden flex flex-col justify-center items-center bg-gray-50 border-t border-gray-300 p-4">
           {["Home", "Contact", "About", "Sign Up",].map((link) => (
