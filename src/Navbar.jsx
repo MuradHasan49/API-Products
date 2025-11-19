@@ -78,7 +78,7 @@ const Navbar = () => {
             <ProfileMenu />
           </div>
 
-          {/* Mobile Icons */}
+
           <div className="flex md:hidden items-center gap-2">
             {/* Mobile Search Toggle */}
             <button onClick={() => setShowSearchMobile(!showSearchMobile)}>
