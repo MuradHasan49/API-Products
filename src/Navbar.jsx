@@ -80,7 +80,7 @@ const Navbar = () => {
 
 
           <div className="flex md:hidden items-center gap-2">
-            {/* Mobile Search Toggle */}
+
             <button onClick={() => setShowSearchMobile(!showSearchMobile)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
